@@ -3,21 +3,22 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="assets\css\stylesheet.css">
-        <link rel="stylesheet" href="assets\css\style.css"> 
+        <link rel="stylesheet" href="assets\css\style.css">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
     </head>
     <body>
         <header>
             <!-- Start Top Navigator -->
             <div class="topNav ff-open">
                 <div class="top-item top-menu">
-                    <a onclick="goToElement('#team',this)">Team</a>
                     <a onclick="goToElement('#about',this)">Company</a>
+                    <a onclick="goToElement('#product',this)">Product</a>
                 </div>
                 <div class="top-item top-logo" onclick="goToElement('#',this)">
-                    <img src="assets/img/logo-bl.png"/>
+                    <img src="assets/img/logo.png"/>
                 </div>
                 <div class="top-item top-menu">
-                    <a onclick="goToElement('#product',this)">Product</a>
+                    <a onclick="goToElement('#team',this)">Team</a>
                     <a onclick="goToElement('#contact',this)">Contact</a>
                 </div>
                 <div class="top-item dummy">
@@ -87,7 +88,7 @@
                     <div class="promo-head"><p class="ff-pop bold fs-big  fs-big-m m-0">New Arivals!</p></div>
                     <div class="promo-body">
                         <a class="first ff-open m-0 s-b">Tingkatkan Penampilanmu</a> <span class="ff-open">Dengan mode </span> <a class="highlight-promo ff-open s-b">TERBARU</a> <span class="ff-open">dan gaya </span><a class="highlight-promo ff-open s-b">TRENDI</a></div>
-                    <div class="promo-description ff-open">Barang dengan merk terkenal ❚ raih diskon sebesar - besarnya<br>gratis ongkir seluruh Indonesia ❚ Grosir lebih MURAH</div>
+                    <div class="promo-description ff-open">Barang dengan merk terkenal ❚ raih diskon hingga <a style="color:white">90%</a><br>gratis ongkir seluruh Indonesia ❚ Grosir lebih MURAH</div>
                     <div style="color:white; padding-top: 2px" class="promo-foot ff-open">⎻⎻⎻ <a onclick="goToElement('#product',this)">BELANJA SEKARANG</a></div>
                 </div>
             </section>
@@ -332,7 +333,7 @@
             const goToElement = (link,element=null) => {
                 let thisEle =  document.querySelector(link)
                 console.log(element.tagName)
-                let Position = thisEle.getBoundingClientRect().top + window.pageYOffset - (screen.height*9/100)
+                let Position = thisEle.getBoundingClientRect().top + window.pageYOffset - (screen.height*8/100)
                 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                     element.tagName == "A" 
                     ? window.scrollTo({top:Position,behavior:'smooth'}) 
@@ -349,13 +350,18 @@
             }
             topNav = document.querySelector('.topNav');
             topDesc = document.querySelector('.companyInfo');
+            myDummy = document.querySelector('.dummy')
             const fixIt = () => {
-                if (window.pageYOffset > screen.height*86/100) {
+                if (window.pageYOffset > screen.height*80/100) {
                     topNav.classList.add('stickTopNav')
                     topDesc.classList.add('topAdd')
+                    myDummy.style.display = "none"
+                }else if(window.pageYOffset > screen.height*2/100 && window.pageYOffset <= screen.height*10/100){
+                    document.querySelector(':root').style.setProperty('--landscape-phone-top',`${2+(window.pageYOffset*100/screen.height)}vh`)
                 }else {
                     topNav.classList.remove('stickTopNav')
                     topDesc.classList.remove('topAdd')
+                    myDummy.style.display = "flex"
                 }
             }
         </script>

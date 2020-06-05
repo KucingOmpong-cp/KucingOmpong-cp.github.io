@@ -377,7 +377,8 @@ footer {
 }
 
 /* Smartphone Responsive Setting */
-@media (max-width:400px){
+@media (max-width:1366px)
+and (orientation:portrait){
     .fs-big-m {
         font-size: 7vh;
     }
