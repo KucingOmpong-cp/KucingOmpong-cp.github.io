@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+    background: #F2F2F2;
+}
+
+/* Start Default Setting Style */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ff-open {
+    font-family: 'Open Sans';
+}
+
+.ff-pop {
+    font-family: 'Poppins';
+}
+
+.m-0{
+    margin: 0;
+}
+
+.pd {
+    padding: 10px;
+}
+
+.b-none {
+    border: none;
+}
+
+.pb-1 {
+    padding-bottom: 5px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-big {
+    font-size: 14vh;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.s-b {
+    font-weight: 600;
+}
+
+.br {
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 40px;
+}
+
+.product, .team, .contact {
+    padding: 60px 0;
+}
+/* End Default Setting Style */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Open Sans';
+    width: 100%;
+    background: #3F1940;
+    color: #fff;
+}
+
+.about-image {
+    width: 50%;
+    height: 60vh;
+    overflow: hidden;
+    opacity: 0.6;
+}
+
+.about-info {
+    width: 50%;
+    padding: 30px;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* Start Product Section Style */
+.product-content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+}
+
+.product-header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-promo {
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.card-promo {
+    width: 100%;
+    height: 100%;
+    background: rgb(44, 23, 121);
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 20% 0;
+}
+
+.card-promo:hover {
+    opacity: 0.8;
+}
+
+.card-promo p {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.product-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-items {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.card-item {
+    position: relative;
+    width: 100%;
+    background: #0DF205;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-item img {
+    width: 100%;
+}
+
+.card-item .item-detail {
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
+    padding: 5px 0 20px 0;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    transition: ease-in 0.5s;
+}
+
+.item-detail h5 {
+    font-size: 12px;
+}
+
+.item-detail p {
+    font-size: 10px;
+}
+
+.card-item img:hover + .item-detail {
+    margin-top: -100px;
+    opacity: 0.8;
+}
+
+.card-item .btn {
+    position: absolute;
+    padding: 4px;
+    color: #fff;
+    width: 100%;
+}
+
+.card-item a {
+    display: block;
+    background: #3F1940;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: -32px;
+    z-index: 2;
+}
+
+.desc {
+    display: flex;
+    width: 100%;
+}
+
+.desc p {
+    margin: 0;
+}
+
+.desc-left {
+    width: 70%;
+    margin: 10px 0 14px 0;
+}
+
+.desc-left .item-name {
+    margin-bottom: 5px;
+}
+
+.desc-right {
+    width: 30%;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 14px 0;
+}
+
+.desc-right .new-item {
+    background: red;
+    margin-bottom: 5px;
+}
+
+.desc-right .category {
+    font-size: 12px;
+    background: blue;
+    padding: 0 1px;
+}
+/* End Product Section Style */
+
+/* Start Team Section Style */
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Open Sans';
+    text-align: center;
+    width: 100%;
+}
+
+.team-member {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.card-member {
+    width: 90%;
+    flex-direction: column;
+    background: #0583F2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Member Card Animation */
+.card-member:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: 2px solid rgba(1,9,9,0.4);
+}
+
+.card-rounded {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.card-rounded img {
+    position: relative;
+    width: 80%;
+}
+
+.desc-member {
+    background-color: rgb(91, 181, 236);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.desc-member .name{
+    margin: 0;
+    font-size: 16px;
+}
+
+.desc-member .role {
+    margin: 0;
+}
+/* End Team Section Style */
+
+/* Start Contact Section Style */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    width: 100%;
+}
+
+.card-contact {
+    width: 50%;
+    background: #0583F2;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.card-contact label, input, textarea {
+    display: block;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form-row .form-group {
+    text-align: left;
+    padding: 5px 5px;
+    width: 50%;
+}
+
+.form-group {
+    text-align: left;
+    padding: 5px 5px;
+}
+
+.btn-message {
+    margin: 10px auto 0 auto;
+    padding: 5px;
+    width: 150px;
+    border: none;
+    border-radius: 17px;
+    background: rgb(82, 33, 83);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+.btn-message a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-message:hover {
+    background: #3F1940;
+}
+/* End Contact Section Style */
+
+/* Footer Style */
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #0468BF;
+    color: #fff;
+    font-family: 'Open Sans';
+}
+
+/* Smartphone Responsive Setting */
+@media (max-width:400px){
+    .fs-big-m {
+        font-size: 7vh;
+    }
+    .flex-center-m {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .fd-column {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .about-image, .about-info {
+        width: 100%;
+    }
+    .about-info {
+        text-align: center;
+    }
+    .product-promo {
+        width: 100%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .card-promo p {
+        font-size: 20px;
+    }
+    .product-items {
+        width: 50%;
+        padding: 0 5px;
+    }
+    .desc-left {
+        font-size: 12px;
+    }
+    .desc-right .new-item {
+        font-size: 12px;
+    }
+    .desc-right .category {
+        font-size: 10px;
+    }
+    .team-member {
+        width: 50%;
+        padding: 5px 5px;
+    }
+    .desc-member .name{
+        font-size: 10px;
+    }    
+    .desc-member .role {
+        font-size: 9px;
+    }
+    .card-contact {
+        width: 90%;
+    }
+    .form-row .form-group{
+        width: 100%;
+    }
+}

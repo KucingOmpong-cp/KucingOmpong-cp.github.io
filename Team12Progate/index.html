@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="assets\css\stylesheet.css">
+        <link rel="stylesheet" href="assets\css\style.css"> 
+    </head>
+    <body>
+        <header>
+            <!-- Start Top Navigator -->
+            <div class="topNav ff-open">
+                <div class="top-item top-menu">
+                    <a onclick="goToElement('#team',this)">Team</a>
+                    <a onclick="goToElement('#about',this)">Company</a>
+                </div>
+                <div class="top-item top-logo" onclick="goToElement('#',this)">
+                    <img src="assets/img/logo-bl.png"/>
+                </div>
+                <div class="top-item top-menu">
+                    <a onclick="goToElement('#product',this)">Product</a>
+                    <a onclick="goToElement('#contact',this)">Contact</a>
+                </div>
+                <div class="top-item dummy">
+
+                </div>
+            </div>
+            <!-- End Top Navigator -->
+        </header>
+        <main>
+            <!-- Start Introduction -->
+            <section class="landingPage">
+                <!-- Start Model -->
+                <div class="model">
+                    <img class="head" src="assets\img\landing-head.png" onmousedown="return false"/>
+                    <img onmouseout="document.querySelector('.torso-item').innerHTML='0 Products';clearTimeout(myTimeout)" onmouseover="testfun('.torso-item',0,100,1000)" class="img-act torso" src="assets\img\landing-torso.png" onmousedown="return false" onclick="goToElement('#product',this.className)"/>
+                    <div class="torso-line"></div>
+                    <div class="torso-info info-box" onclick="goToElement('#product',this.className)">
+                        <span>Torso</span>
+                        <span class="torso-item item-value">0 Products</span>
+                    </div>
+        
+                    <div class="dress">
+                        <img class="img-act left-dress" src="assets\img\landing-left-dress.png" onmousedown="return false" onmousedown="return false"/>
+                        <img class="img-act right-dress" src="assets\img\landing-right-dress.png" onmousedown="return false"/>
+                    </div>
+                    
+                    <div class="shawl">
+                        <img class="img-act left-shawl" src="assets\img\landing-left-shawl.png" onmousedown="return false"/>
+                        <img class="img-act right-shawl" src="assets\img\landing-right-shawl.png" onmousedown="return false"/>
+                    </div>
+            
+                    <img onmouseout="document.querySelector('.pants-item').innerHTML='0 Products';clearTimeout(myTimeout)" onmouseover="testfun('.pants-item',0,100,1000)" class="img-act pants" src="assets\img\landing-pants.png" onmousedown="return false" onclick="goToElement('#product',this.className)"/>
+                    <div class="pants-line"></div>
+                    <div class="pants-info info-box" onclick="goToElement('#product',this.className)">
+                        <span>Pants</span>
+                        <span class="pants-item item-value">0 Products</span>
+                    </div>
+        
+                    <img onmouseout="document.querySelector('.shoes-item').innerHTML='0 Products';clearTimeout(myTimeout)" onmouseover="testfun('.shoes-item',0,100,1000)" class="img-act shoes" src="assets\img\landing-shoes.png" onmousedown="return false" onclick="goToElement('#product',this.className)"/>
+                    <div class="shoes-line"></div>
+                    <div class="shoes-info info-box" onclick="goToElement('#product',this.className)">
+                        <span>Shoes</span>
+                        <span class="shoes-item item-value">0 Products</span>
+                    </div>
+        
+                    <img class="left-hand" src="assets\img\landing-left-hand.png">
+                    <img class="right-hand" src="assets\img\landing-right-hand.png">
+                </div>
+                <!-- End Model -->
+            </section>
+            <!-- Start Detailed Page -->
+            <section>
+                <div class="bottomDetailed info-box" onclick="goToElement('#companyInfo',this.className)">
+                    Click Here !
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M24 35H14V2h36v33H40"
+                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke="#202020"
+                        fill="none" data-name="layer2" stroke-linejoin="round"></path>
+                        <path d="M32 20v41M21 48l11 13 11-13" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke="#202020" fill="none" data-name="layer1"
+                        stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </div>
+                <div class="companyInfo flex-center-m fd-column" id="companyInfo">
+                    <div class="promo-head"><p class="ff-pop bold fs-big  fs-big-m m-0">New Arivals!</p></div>
+                    <div class="promo-body">
+                        <a class="first ff-open m-0 s-b">Tingkatkan Penampilanmu</a> <span class="ff-open">Dengan mode </span> <a class="highlight-promo ff-open s-b">TERBARU</a> <span class="ff-open">dan gaya </span><a class="highlight-promo ff-open s-b">TRENDI</a></div>
+                    <div class="promo-description ff-open">Barang dengan merk terkenal ❚ raih diskon sebesar - besarnya<br>gratis ongkir seluruh Indonesia ❚ Grosir lebih MURAH</div>
+                    <div style="color:white; padding-top: 2px" class="promo-foot ff-open">⎻⎻⎻ <a onclick="goToElement('#product',this)">BELANJA SEKARANG</a></div>
+                </div>
+            </section>
+            <!-- End Detailed Page -->
+            <!-- Start Section Company Info -->
+            <section class="about" id="about">
+                <div class="about-image flex-center">
+                    <img src="assets/img/store.jpg" alt="">
+                </div>
+                <div class="about-info">
+                    <h3 class="bold">TRENDI</h3>
+                    <p><span>TRENDI</span> didirikan di Indonesia pada tahun 2020. Berawal dari kepedulian 4 orang terhadap gaya berpakaian pria masa kini dan sekarang menghasilkan banyak pakaian masa kini yang di gemari banyak pria kekinian. Penjualan terbesar didapatkan dari distribusi ke retail - retail, dan juga marketplace. Trendi memiliki tujuan : menghadirkan pakaian lengkap yang cocok digunakan kapanpun dan dimanapun.</p>
+                </div>
+            </section>
+            <!-- End Section Company Info --> 
+            <!-- Start Product Section -->
+            <section id="product" class="product">
+                <div class="container">
+                    <h2>PRODUCT</h2>
+                    <div class="product-content">
+                        <div class="product-header">
+                            <div class="product-promo">
+                                <div class="card-promo flex-center">
+                                    <p class="bold">promotion</p>
+                                </div>
+                            </div>
+                            <div class="product-promo">
+                                <div class="card-promo flex-center">
+                                    <p class="bold">hot product</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main">
+                            
+                            <div class="product-items">
+                                <div class="card-item">
+                                    <img src="assets/img/product1.png" alt="">
+                                    <div class="item-detail">
+                                        <h5 class="m-0">Black Pants</h5>
+                                        <p class="m-0">Material : Cotton Twill</p>
+                                        <p class="m-0">Size : 28, 29, 30, 31, 32, 33, 34</p>
+                                    </div>
+                                    <a class="btn bold" href="">ORDER</a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-left fs-14">
+                                        <p class="item-name">BLACK PANTS</p>
+                                        <p class="price bold">IDR 249.000</p>
+                                    </div>
+                                    <div class="desc-right">
+                                        <p class="new-item fs-14">new</p>
+                                        <p class="category">PANTS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-items">
+                                <div class="card-item">
+                                    <img src="assets/img/product2.png" alt="">
+                                    <div class="item-detail">
+                                        <h5 class="m-0">White T-Shirt</h5>
+                                        <p class="m-0">Material : Cotton Combed 30s</p>
+                                        <p class="m-0">Size : S, M, L, XL</p>
+                                    </div>
+                                    <a class="btn bold" href="">ORDER</a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-left fs-14">
+                                        <p class="item-name">WHITE T-SHIRT</p>
+                                        <p class="price bold">IDR 129.000</p>
+                                    </div>
+                                    <div class="desc-right">
+                                        <p class="new-item fs-14">new</p>
+                                        <p class="category">T-SHIRT</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-items">
+                                <div class="card-item">
+                                    <img src="assets/img/product3.png" alt="">
+                                    <div class="item-detail">
+                                        <h5 class="m-0">Modelio Jacket</h5>
+                                        <p class="m-0">Material : Taslan Milky</p>
+                                        <p class="m-0">Size : M, L, XL</p>
+                                    </div>
+                                    <a class="btn bold" href="">ORDER</a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-left fs-14">
+                                        <p class="item-name">MODELIO JACKET</p>
+                                        <p class="price bold">IDR 349.000</p>
+                                    </div>
+                                    <div class="desc-right">
+                                        <p class="new-item fs-14">new</p>
+                                        <p class="category">JACKET</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-items">
+                                <div class="card-item">
+                                    <img src="assets/img/product4.png" alt="">
+                                    <div class="item-detail">
+                                        <h5 class="m-0">Black Pants</h5>
+                                        <p class="m-0">Material : Twill</p>
+                                        <p class="m-0">Size : M, L, XL</p>
+                                    </div>
+                                    <a class="btn bold" href="">ORDER</a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-left fs-14">
+                                        <p class="item-name">NY HAT</p>
+                                        <p class="price bold">IDR 109.000</p>
+                                    </div>
+                                    <div class="desc-right">
+                                        <p class="new-item fs-14">new</p>
+                                        <p class="category">ACCESSORY</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Product Section -->
+            <!-- Start Team Section -->
+            <section id="team" class="team">
+                <div class="container">
+                    <h2>TEAM</h2>
+                    <div class="team-content">
+                        <div class="team-member flex-center">
+                            <div class="card-member flex-center">
+                                <div class="card-rounded flex-center">
+                                    <img src="assets/img/user1.png" alt="">
+                                </div>
+                                <div class="desc-member">
+                                    <p class="name bold">Alvin Mantovani</p>
+                                    <p class="role fs-14">Owner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member flex-center">
+                            <div class="card-member flex-center">
+                                <div class="card-rounded flex-center">
+                                    <img src="assets/img/user2.png" alt="">
+                                </div>
+                                <div class="desc-member">
+                                    <p class="name bold">Muhammad Manshur</p>
+                                    <p class="role fs-14">Creative Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member flex-center">
+                            <div class="card-member flex-center">
+                                <div class="card-rounded flex-center">
+                                    <img src="assets/img/user3.png" alt="">
+                                </div>
+                                <div class="desc-member">
+                                    <p class="name bold">Rizka Shinta W</p>
+                                    <p class="role fs-14">CSR Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member flex-center">
+                            <div class="card-member flex-center">
+                                <div class="card-rounded flex-center">
+                                    <img src="assets/img/user4.png" alt="">
+                                </div>
+                                <div class="desc-member">
+                                    <p class="name bold">Leo Pordo da Meyer S</p>
+                                    <p class="role fs-14">Accounting Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Team Section -->
+            <!-- Start Contact Section -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2>CONTACT</h2>
+                    <div class="contact-content flex-center">
+                        <div class="card-contact">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="pb-1 fs-14" for="name bold">Your Name</label>
+                                    <input class="pd b-none br" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label class="pb-1 fs-14" for="name">Your Email</label>
+                                    <input class="pd b-none br" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="pb-1 fs-14" for="name">Subject</label>
+                                <input class="pd b-none br" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="pb-1 fs-14" for="name">Message</label>
+                                <textarea class="pd b-none br" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="btn-message flex-center">
+                                <a class="bold" href="">Send Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact Section -->
+        </main>
+        <footer>
+            <div class="container">
+                <p>&copy; Copyright by <span class="bold">Team12GlintsxProgate</span></p>
+            </div>
+            <!-- Footer Section -->
+        </footer>
+    </body>
+    <foot>
+        <script>
+            var myTimeout;
+            const testfun = (id, start, end, duration) => {
+            var range = end - start;
+            var current = start;
+            var increment = end > start? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.querySelector(id);
+
+            myTimeout = setTimeout(() => {
+                var timer = setInterval(function() {
+                current += increment;
+                obj.innerHTML = `${current} Products`;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+                }, stepTime);
+            }, 3000);
+            }
+            
+            const goToElement = (link,element=null) => {
+                let thisEle =  document.querySelector(link)
+                console.log(element.tagName)
+                let Position = thisEle.getBoundingClientRect().top + window.pageYOffset - (screen.height*9/100)
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    element.tagName == "A" 
+                    ? window.scrollTo({top:Position,behavior:'smooth'}) 
+                    : element.split(' ')[1] == "info-box" 
+                    ? window.scrollTo({top:Position,behavior:'smooth'}) 
+                    : null
+                }else {
+                    window.scrollTo({top:Position,behavior:'smooth'})
+                }
+            }
+
+            window.onscroll = () => {
+                fixIt()
+            }
+            topNav = document.querySelector('.topNav');
+            topDesc = document.querySelector('.companyInfo');
+            const fixIt = () => {
+                if (window.pageYOffset > screen.height*86/100) {
+                    topNav.classList.add('stickTopNav')
+                    topDesc.classList.add('topAdd')
+                }else {
+                    topNav.classList.remove('stickTopNav')
+                    topDesc.classList.remove('topAdd')
+                }
+            }
+        </script>
+    </foot>
+</html>
