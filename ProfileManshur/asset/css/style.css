@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #7AEDFF;
+}
+section {
+    padding: 40px 0;
+}
+
+/* Class Default Style Setting */
+.sri {
+    font-family: 'Sriracha', cursive;
+}
+.bold {
+    font-weight: 700;
+}
+.s-b {
+    font-weight: 600;
+}
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.mp-0 {
+    margin: 0;
+    padding: 0;
+}
+.sticky {
+    width: 100%;
+    background: #00a2ff;
+}
+/* Flex Style Setting */
+.flex {
+    display: flex;
+}
+.h-center {
+    justify-content: center;
+}
+.v-center {
+    align-items: center;
+}
+/* Flex Style Setting */
+
+/* Dark Mode Style Setting */
+.dark {
+    background: #3d3d3d;
+    color: #fff;
+}
+.dark-banner {
+    background: #1d1d1d;
+}
+.dark-rounded {
+    background: #f5ff67;
+    color: #1d1d1d;
+}
+.dark-card {
+    background: #1d1d1d;
+    fill: #1d1d1d;
+}
+.black {
+    background: #141414;
+}
+/* Dark Mode Style Setting */
+
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+}
+p {
+    font-size: 18px;
+}
+
+/* Navbar Style Setting */
+.logo {
+    position: fixed;
+    float: left;
+    padding: 10px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.logo img {
+    width: 45px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+}
+.light {
+    background: #00a2ff;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px 40px;;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+nav.light ul li a {
+    color: #000;
+}
+.menu-icon {
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #000;
+    display: none;
+}
+/* Navbar Style Setting */
+
+
+/* Banner Style Setting */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #4EBEFF;
+    /* z-index: -1; */
+}
+.rounded {
+    width: 370px;
+    height: 370px;
+    flex-direction: column;
+    background: #504529;
+    border-radius: 50%;
+    color: #4EBEFF;
+    box-shadow: 0 0 6px #000000;
+    padding-top: 25px;
+}
+.rounded h1 {
+    font-size: 34px;
+    letter-spacing: 1.5px;
+}
+.rounded p {
+    font-size: 20px;
+}
+.btn-switch {
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #1bddff;
+    color: #272727;
+    box-shadow: 0 7px #999;
+    border: none;
+}
+.btn-switch:hover {
+    background: #00c3e6;
+}
+.btn-switch:active {
+    background: #00c3e6;
+    box-shadow: 0 4px #666;
+    transform: translateY(3px);
+}
+/* Banner Style Setting */
+
+/* About Style Setting */
+.about {
+    padding-top: 80px;
+}
+.about-content {
+    flex-direction: column;
+}
+.about-content img {
+    width: 300px;
+}
+.about-content p {
+    width: 50%;
+    text-align: center;
+}
+.about-image img {
+    height: 50px;
+    margin: 10px 10px 0 10px;
+}
+/* About Style Setting */
+
+/* Skill Style Setting */
+.skill-content {
+    width: 100%;
+    flex-direction: row;
+}
+.skill-box {
+    width: 25%;
+    flex-direction: column;
+}
+.skill-card {
+    width: 160px;
+    height: 160px;
+    background: #ffe3e3;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000000;
+}
+.item{
+    width: 120px;
+    height: 120px;
+}
+
+/* Circle Skill Bar Style */
+.circular-chart {
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    margin: 0 auto;
+}
+.circle-bg {
+    fill: #4EBEFF;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+}
+.circular-chart.orange .circle {
+    stroke: #ff9f00;
+}
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+/* Circle Skill Bar Style */
+/* Skill Style Setting */
+
+/* Freelance or I Can Do Style Setting */
+.do-content {
+    flex-direction: column;
+}
+.content-box,.content-box1 {
+    padding: 0 120px;
+}
+.content-box,.content-box1 {
+    float: right;
+    margin-bottom: 20px;
+}
+.image-box, .image-box1, .desc-box, .desc-box1 {
+    padding: 0 40px;
+}
+.image-box img, .image-box1 img {
+    height: 180px;
+}
+.image-box1 {
+    order: 2;
+}
+.desc-box1 {
+    order: 1;
+}
+/* Freelance or I Can Do Style Setting */
+
+/* Contact Style Setting */
+.contact-content {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.contact-desc {
+    width: 60%;
+}
+.contact-desc p {
+    padding-bottom: 20px;
+}
+.mail {
+    padding: 10px 20px;
+    background: #ff9f00;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ddd;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #666;
+}
+.mail:hover {
+    background: #d18100;
+}
+/* Contact Style Setting */
+
+/* Footer Style Setting */
+footer {
+    background: #00a2ff;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+/* Footer Style Setting */

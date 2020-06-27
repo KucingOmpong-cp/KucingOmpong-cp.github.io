@@ -1,0 +1,140 @@
+/* Smartphone Setting */
+@media all and (max-width: 670px) {
+    /* Default Mobile Style */
+    .text-center-m {
+        text-align: center;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    /* End Default Mobile Style */
+
+    /* Navbar Mobile Style Setting */
+    .logo {
+        position: fixed;
+        top: 0;
+        padding: 10px;
+    }
+    nav ul {
+        max-height: 0px;
+        /* background: #000;
+        padding-bottom: 10px; */
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .showing {
+        max-height: 34em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+        padding: 15px;
+    }
+    .menu-icon.bl-icon {
+        color: #fff;
+    }
+    /* Navbar Mobile Style Setting */
+
+    /* Banner Mobile Style Setting */
+    .banner {
+        height: 500px;
+    }
+    .rounded {
+        width: 230px;
+        height: 230px;
+    }
+    .rounded h1 {
+        font-size: 20px;
+    }
+    .rounded p {
+        font-size: 12px;
+    }
+    .btn-switch {
+        width: 80px;
+        height: 25px;
+        margin-top: 10px;
+        box-shadow: 0 4px #999;
+        font-size: 12px;
+    }
+    .btn-switch:hover {
+        background: #00c3e6;
+    }
+    .btn-switch:active {
+        background: #00c3e6;
+        box-shadow: 0 2px #666;
+        transform: translateY(2px);
+    }
+    /* Banner Mobile Style Setting */
+
+    /* About Mobile Style Setting */
+    .about-content img {
+        width: 200px;
+    }
+    .about-content p {
+        width: 90%;
+    }
+    .about-image img {
+        height: 40px;
+        margin: 10px 5px 0 5px;
+    }
+    /* About Mobile Style Setting */
+
+    /* Skill Mobile Style Setting */
+    .skill-content {
+        flex-wrap: wrap;
+    }
+    .skill-box {
+        width: 50%;
+    }
+    .skill-card {
+        width: 120px;
+        height: 120px;
+    }
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+    /* Skill Mobile Style Setting */
+
+    /* What I Can Do/Freelance Mobile Style Setting */
+    .content-box,.content-box1 {
+        flex-direction: column;
+    }
+    .content-box, .content-box1, .image-box, .image-box1, .desc-box, .desc-box1 {
+        padding: 0;
+        justify-content: center;
+    }
+    .image-box1 {
+        order: 1;
+    }
+    .desc-box1 {
+        order: 2;
+    }
+    .image-box img, .image-box1 img {
+        height: 120px;
+    }
+    /* What I Can Do/Freelance Mobile Style Setting */
+
+    /* Contact Mobile Style Setting */
+    .contact-desc {
+        width: 100%;
+    }
+    .mail {
+        padding: 7px 15px;
+        font-size: 12px;
+        border-radius: 10px;
+        box-shadow: 0 3px #666;
+    }
+}
