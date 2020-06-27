@@ -29,6 +29,7 @@ function DarkMode() {
     }
 
     // Switch Text Dark to Light
+    navbar.classList.add('light');
     if(button.innerHTML == "dark mode") {
         button.innerHTML = "light mode";
         navbar.classList.add('black');
