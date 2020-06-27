@@ -54,28 +54,6 @@ section {
 }
 /* Flex Style Setting */
 
-/* Dark Mode Style Setting */
-.dark {
-    background: #3d3d3d;
-    color: #fff;
-}
-.dark-banner {
-    background: #1d1d1d;
-}
-.dark-rounded {
-    background: #f5ff67;
-    color: #1d1d1d;
-}
-.dark-card {
-    background: #1d1d1d;
-    fill: #1d1d1d;
-}
-.black {
-    background: #141414;
-}
-/* Dark Mode Style Setting */
-
-
 h2 {
     text-align: center;
     font-size: 40px;
@@ -323,3 +301,24 @@ footer {
     margin-top: 40px;
 }
 /* Footer Style Setting */
+
+/* Dark Mode Style Setting */
+.dark {
+    background: #3d3d3d;
+    color: #fff;
+}
+.dark-banner {
+    background: #1d1d1d;
+}
+.dark-rounded {
+    background: #f5ff67;
+    color: #1d1d1d;
+}
+.dark-card {
+    background: #1d1d1d;
+    fill: #1d1d1d;
+}
+.black {
+    background: #141414;
+}
+/* Dark Mode Style Setting */
